@@ -1,0 +1,190 @@
+\subsection{oefenopgaven magnetisme en elektromotoren.}
+
+\textbf{Opgave 1}
+
+De magnetische fluxdichtheid, \( B \), word gegeven door:
+
+\[ B = \frac{\Phi}{A} \]
+
+Waar:\\
+- \( B \) is de magnetische fluxdichtheid in Tesla (T).\\
+- \( \Phi \) is de magnetische flux in Weber (Wb).\\
+- \( A \) is het oppervlak waar de flux doorheen gaat in vierkante meters (\( m^2 \)).
+
+In dit geval hebben we \( \Phi = 800 \mu, \Phi = 800 \cdot 10^{-6} \text{Wb} \) en \( A = 0.1 \, \text{m}^2 \). Laten we deze waarden in de formule invullen:
+
+\[ B = \frac{800 \cdot 10^{-6} \, \text{Wb}}{0.1 \, \text{m}^2} \]
+
+\[ B = 8000 \cdot 10^{-6} \, \text{T} \]
+
+\[ B = 8 \cdot 10^{-3} \, \text{T} \]
+
+\newpage
+\textbf{Opgave 2}\\
+Om de magnetische flux (\( \Phi_{\text{magn}} \)), magnetische fluxdichtheid (\( B \)) en magnetische veldsterkte (\( H \)) te berekenen voor een luchtspleet \( \delta = 0 \) m, kunnen we de volgende stappen volgen:\\
+Gegeven:
+\begin{enumerate}
+    \item[-] Oppervlakte doorsnede ijzeren kern \( A = 80 \, \text{mm}^2 = 80 \cdot 10^{-6} \, \text{m}^2 \)
+    \item[-] Gemiddelde lengte \( l = 0.4 \, \text{m} \)
+    \item[-] Permeabiliteit van ijzer \( \mu_{\text{ijzer}} = 5000 \)
+    \item[-] Aantal windingen \( N = 22000 \)
+    \item[-] Stroom \( i = 12 \, \text{mA} = 12 \cdot 10^{-3} \, \text{A} \)
+\end{enumerate}
+
+\begin{enumerate}
+    \item [a.]Luchtspleet \( \delta = 0 \)\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{22000 \cdot 12 \cdot 10^{-3}}{0.4} = 660 \, \text{A/m} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 5000 \cdot 4\pi \cdot 10^{-7} \cdot 660 = 4,147 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 4,147 \cdot 80 \cdot 10^{-6} = 3,31 \cdot 10^{-4} \, \text{Wb} \]
+
+    \item [b.]Luchtspleet \( \delta = 0,15 \cdot 10^{-3}  \)\\
+        \textbf{Stap 1: Bereken \( \Phi \):} 
+        \[ \Phi_{\text{algemeen}} = 
+            \frac{N \cdot I}{\frac{l}{\mu_{\text{ijzer}} \cdot A} + \frac{l}{\mu_{\text{lucht}} \cdot A}}  =    \frac{22000 \cdot 12 \cdot 10^{-3}}{\frac{0,4}{5000 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}} + \frac{0,15 \cdot 10^{-3}}{1 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}}} = 1,1539 \cdot 10^{-4} \, \text{Wb} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \frac{\Phi_{\text{algemeen}}}{A} = \frac{1.1539 \cdot 10^{-4}}{80 \cdot 10^{-6}} = 1.4423 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( H \):}
+        \[ H_{\text{ijzer}} = 
+            \frac{B}{\mu_{\text{ijzer}}} = \frac{1.4423}{5000 \cdot 4\pi \cdot 10^{-7}} = 229.55 \, \text{A/m} \]
+        \[ H_{\text{lucht}} = 
+            \frac{B}{\mu_{\text{lucht}}} = \frac{1.4423}{1 \cdot 4\pi \cdot 10^{-7}} = 1147745.87 \, \text{A/m} \]
+
+    \item [c.]Luchtspleet \( \delta = 0,15 \cdot 10^{-2}  \)\\
+        \textbf{Stap 1: Bereken \( \Phi \):} 
+        \[ \Phi_{\text{algemeen}} = 
+            \frac{N \cdot I}{\frac{l}{\mu_{\text{ijzer}} \cdot A} + \frac{l}{\mu_{\text{lucht}} \cdot A}}  =    \frac{22000 \cdot 12 \cdot 10^{-3}}{\frac{0,4}{5000 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}} + \frac{0,15 \cdot 10^{-2}}{1 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}}} = 1,68 \cdot 10^{-4} \, \text{Wb} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \frac{\Phi_{\text{algemeen}}}{A} = \frac{1.68 \cdot 10^{-4}}{80 \cdot 10^{-6}} = 0.21 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( H \):}
+        \[ H_{\text{ijzer}} = 
+            \frac{B}{\mu_{\text{ijzer}}} = \frac{0.21}{5000 \cdot 4\pi \cdot 10^{-7}} = 33.4 \, \text{A/m} \]
+        \[ H_{\text{lucht}} = 
+            \frac{B}{\mu_{\text{lucht}}} = \frac{0.21}{1 \cdot 4\pi \cdot 10^{-7}} = 167120.3 \, \text{A/m} \]
+    \item [d.] hoe groter de luchtspleet hoe kleiner de fluxdichtheid
+\end{enumerate}
+
+\newpage
+\textbf{Opgave 3}\\
+Gegeven:
+\begin{enumerate}
+    \item[-] Oppervlakte doorsnede ijzeren kern \( A = 80 \, \text{mm}^2 = 80 \cdot 10^{-6} \, \text{m}^2 \)
+    \item[-] Gemiddelde lengte \( l = 0.4 \, \text{m} \)
+    \item[-] Permeabiliteit van ijzer \( \mu_{\text{ijzer}} = 1000 \)
+    \item[-] Aantal windingen \( N = 22000 \)
+    \item[-] Stroom \( i = 12 \, \text{mA} = 12 \cdot 10^{-3} \, \text{A} \)
+\end{enumerate}
+
+\begin{enumerate}
+    \item [a.]Luchtspleet \( \delta = 0 \)\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{22000 \cdot 12 \cdot 10^{-3}}{0.4} = 660 \, \text{A/m} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 1000 \cdot 4\pi \cdot 10^{-7} \cdot 660 = 0.829 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 0.829 \cdot 80 \cdot 10^{-6} = 6.64 \cdot 10^{-5} \, \text{Wb} \]
+
+    \item [b.]Luchtspleet \( \delta = 0,15 \cdot 10^{-3}  \)\\
+        \textbf{Stap 1: Bereken \( \Phi \):} 
+        \[ \Phi_{\text{algemeen}} = 
+            \frac{N \cdot I}{\frac{l}{\mu_{\text{ijzer}} \cdot A} + \frac{l}{\mu_{\text{lucht}} \cdot A}}  =    \frac{22000 \cdot 12 \cdot 10^{-3}}{\frac{0,4}{1000 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}} + \frac{0,15 \cdot 10^{-3}}{1 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}}} = 4.8244 \cdot 10^{-5} \, \text{Wb} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \frac{\Phi_{\text{algemeen}}}{A} = \frac{1.1539 \cdot 10^{-4}}{80 \cdot 10^{-6}} = 0.603 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( H \):}
+        \[ H_{\text{ijzer}} = 
+            \frac{B}{\mu_{\text{ijzer}}} = \frac{1.4423}{1000 \cdot 4\pi \cdot 10^{-7}} = 480.13 \, \text{A/m} \]
+        \[ H_{\text{lucht}} = 
+            \frac{B}{\mu_{\text{lucht}}} = \frac{1.4423}{1 \cdot 4\pi \cdot 10^{-7}} = 480130.94 \, \text{A/m} \]
+
+    \item [c.]Luchtspleet \( \delta = 0,15 \cdot 10^{-2}  \)\\
+        \textbf{Stap 1: Bereken \( \Phi \):} 
+        \[ \Phi_{\text{algemeen}} = 
+            \frac{N \cdot I}{\frac{l}{\mu_{\text{ijzer}} \cdot A} + \frac{l}{\mu_{\text{lucht}} \cdot A}}  =    \frac{22000 \cdot 12 \cdot 10^{-3}}{\frac{0,4}{1000 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}} + \frac{0,15 \cdot 10^{-2}}{1 \cdot 4\pi \cdot 10^{-7} \cdot 80 \cdot 10^{-6}}} = 1.3972 \cdot 10^{-5} \, \text{Wb} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \frac{\Phi_{\text{algemeen}}}{A} = \frac{1.68 \cdot 10^{-4}}{80 \cdot 10^{-6}} = 0.1747 \, \text{T} \]
+        \textbf{Stap 3: Bereken \( H \):}
+        \[ H_{\text{ijzer}} = 
+            \frac{B}{\mu_{\text{ijzer}}} = \frac{0.21}{1000 \cdot 4\pi \cdot 10^{-7}} = 139.06 \, \text{A/m} \]
+        \[ H_{\text{lucht}} = 
+            \frac{B}{\mu_{\text{lucht}}} = \frac{0.21}{1 \cdot 4\pi \cdot 10^{-7}} = 139057.15 \, \text{A/m} \]
+    \item [d.] hoe groter de luchtspleet hoe kleiner de fluxdichtheid
+\end{enumerate}
+
+\newpage
+\textbf{Opgave 4}\\
+Gegeven:
+\begin{enumerate}
+    \item[-] Oppervlakte doorsnede ijzeren kern \( A = 80 \, \text{mm}^2 = 80 \cdot 10^{-6} \, \text{m}^2 \)
+    \item[-] Gemiddelde lengte \( l = 0.4 \, \text{m} \)
+    \item[-] Permeabiliteit van ijzer \( \mu_{\text{ijzer}} = 5000 \)
+    \item[-] Aantal windingen \( N = 22000 \)
+    \item[-] Stroom \( i = 12 \, \text{mA} = 12 \cdot 10^{-3} \, \text{A} \)
+    \item[-] Luchtspleet \( \delta = 0 \)
+\end{enumerate}
+
+\begin{enumerate}
+    \item [a.]Doorsnede verdubbeld.\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{22000 \cdot 12 \cdot 10^{-3}}{0.4} = 660 \, \text{A/m - blijft dus gelijk} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 5000 \cdot 4\pi \cdot 10^{-7} \cdot 660 = 4,147 \, \text{T - blijft dus gelijk} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 4,147 \cdot 160 \cdot 10^{-6} = 6.63 \cdot 10^{-4} \, \text{Wb - word groter (verdubbeld)} \]
+
+    \item [b.]Lengte l gehalveerd.\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{22000 \cdot 12 \cdot 10^{-3}}{0.2} = 1320 \, \text{A/m - word dus groter} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 5000 \cdot 4\pi \cdot 10^{-7} \cdot 1320 = 8.29 \, \text{T - word dus groter} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 8.29 \cdot 80 \cdot 10^{-6} = 6.63 \cdot 10^{-4} \, \text{Wb - word dus groter} \]
+    
+    \item [c.]Stroom i groter.\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{22000 \cdot 6 \cdot 10^{-3}}{0.4} = 330 \, \text{A/m - word dus kleiner} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 5000 \cdot 4\pi \cdot 10^{-7} \cdot 330 = 2.073 \, \text{T - word dus kleiner} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 4,147 \cdot 80 \cdot 10^{-6} = 1.66 \cdot 10^{-4} \, \text{Wb - word dus kleiner} \]
+    
+     \item [d.]Aantal windingen N gehalveerd.\\
+        \textbf{Stap 1: Bereken \( H \):} 
+        \[ H = 
+            \frac{N \cdot i}{l} = \frac{11000 \cdot 12 \cdot 10^{-3}}{0.4} = 330 \, \text{A/m - word dus kleiner} \]
+        \textbf{Stap 2: Bereken \( B \):} 
+        \[ B = 
+            \mu_{\text{ijzer}} \cdot H = 5000 \cdot 4\pi \cdot 10^{-7} \cdot 330 = 2.073 \, \text{T - word dus kleiner} \]
+        \textbf{Stap 3: Bereken \( \Phi_{\text{magn}} \):} 
+        \[ \Phi_{\text{magn}} = 
+            B \cdot A = 4,147 \cdot 80 \cdot 10^{-6} = 1.66 \cdot 10^{-4} \, \text{Wb - word dus kleiner} \]
+\end{enumerate}
+
+\newpage
+\textbf{Opgave 5}\\
+Hoe kleiner de hoek \( \Phi \), hoe kleiner het koppel T.\\
+Bij 0° is T=0 en bij 90° is T maximaal.\\
+Dit heeft te maken met het feit dat een magnetisch systeem er altijd naar zal streven om de flux te maximaliseren (‘oplijnen’).
+
+
+
