@@ -1,6 +1,6 @@
 \begin{center}
     \textbf{Motor Specifications}
-\end{center}
+\end{center} 
 
 \begin{align*}
     &\text{Nominal Voltage (U\textsubscript{klem\_nom)}:} & 24 \, \text{V} \\
@@ -14,7 +14,7 @@
 \begin{enumerate}
     \item [a.] \textbf{Bepaal het nominale vermogen op de as van de motor ($P_{\text{as\_nom}}$):}
     
-        $P_{\text{nominaal}} = \text{Nominal Voltage} \times \text{Nominal Current} \times \text{Efficiency} = 24 \times 10,71 \times 0.70 = 179,24W$
+        $P_{\text{nominaal}} = \text{Nominal Voltage} \times \text{Nominal Current} \times \text{Efficiency} = 24 \times 10,71 \times 0.70 = 179,93W$
 
 
 
@@ -22,30 +22,32 @@
     welke waarde de karakteristiek de verticale as snijdt en bij welke waarde de
     karakteristiek de horizontale as snijdt.}
 
-        $T\textsubscript{stall} = \frac{U\textsubscript{klem}}{R\textsubscript{r}} \times K\textsubscript{em} = \frac{U\textsubscript{klem}}{\frac{U\textsubscript{klem}}{I\textsubscript{klem}}} \times K\textsubscript{em} = \frac{24}{\frac{24}{10,71}} \times 0,09 = 0,96 \text{ Nm}$
+        % $T\textsubscript{stall} = \frac{U\textsubscript{klem}}{R\textsubscript{r}} \times K\textsubscript{em} = \frac{U\textsubscript{klem}}{\frac{U\textsubscript{klem}}{I\textsubscript{klem}}} \times K\textsubscript{em} = \frac{24}{\frac{24}{10,71}} \times 0,09 = 0,96 \text{ Nm}$
 
-        $\omega_{null} = \frac{U\textsubscript{klem}}{K\textsubscript{em}} = 266,66 \text{ rad/s}$
+        $T\textsubscript{stall} = 1 \text{ Nm}$
+
+        $\omega_{null} = 200 \text{ rad/s}$
 
         \begin{figure}[h]
             \centering
-            \includegraphics[scale=0.7]{koppel-toerenkarakteristiek 1b.png}
+            \includegraphics[scale=0.6]{koppel-toerenkarakteristiek 1b.png}
             \caption{koppel-toerenkarakteristiek}
         \end{figure}
 
     \item [c.] \textbf{Een belangrijke parameter van de motor is de motorconstante $K_{\text{em}}$.
     Bereken deze.}
 
-        $K\textsubscript{em} = \frac{T\textsubscript{as}}{I\textsubscript{klem}} = \frac{1,0}{10,71} = 0,09 \text{ Nm/A}$
+        $K\textsubscript{em} = \frac{U\textsubscript{klem}}{\omega\textsubscript{nullast}} = \frac{24}{200} = 0.12 \text{ V/ rad/s}$
 
-    \item [d.] \textbf{De motor wordt gebruikt voor het aandrijven van een toerental onafhankelijke
+\item [d.] \textbf{De motor wordt gebruikt voor het aandrijven van een toerental onafhankelijke
     last van $T_{\text{last}}$ = 200 mNm. De klemspanning van de motor is ingesteld op 24V
-    Bepaal nu het werkpunt van de motor: het toerental en het koppel. Wat is bij dit werkpunt de opgenomen stroom?} 
+    Bepaal nu het werkpunt van de motor: het toerental en het koppel. Wat is bij dit werkpunt de opgenomen stroom?}     
 
-        $\text{toerental} = ?$
+        $\text{toerental} -> 0,2=-0,0048x + 0,96 -> x = 158,33 rad/s = 1511,94 rpm $
     
-        $\text{koppel} = ?$
+        $\text{koppel} = 0,2 Nm$
         
-        $\text{stroom} = \frac{koppel}{motorconstante} = \frac{??}{0,09} = ??$
+        $\text{stroom} = \frac{koppel}{motorconstante} = \frac{0,2}{0,12} = 1,67 A$
 
     \item [e.] \textbf{De motor wordt gebruikt voor het aandrijven van een toerental onafhankelijke
     last van $T_{\text{last}}$ = 200 mNm. Dus dat is nog dezelfde situatie als bij opgave d).
