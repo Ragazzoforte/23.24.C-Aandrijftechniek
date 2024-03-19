@@ -5,7 +5,7 @@ koppel-toerenkarakteristiek.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1.5]{3-uitleg.png}
+    \includegraphics[scale=1]{3-uitleg.png}
 \end{figure}
 
 \begin{enumerate}
@@ -28,7 +28,7 @@ koppel-toerenkarakteristiek.
 De motor wordt gebruikt om een last aan te drijven waarvan de koppel-toerenkarakteristiek tijdens bedrijf kan variëren in het rode gebied dat is aangegeven in onderstaand figuur.
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1]{3b-uitleg.png}
+    \includegraphics[scale=0.8]{3b-uitleg.png}
 \end{figure}
 
 \begin{enumerate}
@@ -39,14 +39,18 @@ De motor wordt gebruikt om een last aan te drijven waarvan de koppel-toerenkarak
         Omdat je koppel toerenkarakteristiek over de horizontale as verschuift omdat je rpm meer wordt blijft je koppel gelijk. ofterwijl 20Nm.
 
 
-    \item [d.] \textbf{Bepaal het maximale vermogen dat de motor op de last kan overbrengen bij een lastkoppel van 10 Nm.}     
+    \item [d.] \textbf{Bepaal het maximale vermogen dat de motor op de last kan overbrengen bij een lastkoppel van 10 Nm.}   
     
-        $ P_{uit} = \omega_{s} \times T_{em} = 157 \times 10 = 1570 Watt $
+        $ \frac{U}{F} = constant \Rightarrow \frac{20V}{1500rpm} = 0,01333$
+
+        $ f_{s} = \frac{T_{last}}{constant} = \frac{10Nm}{0,01333} = 750,19 rpm$
 
         $ \omega_{s} 
-        = \frac{2 \times \pi \times rpm}{60} 
-        = \frac{2 \times \pi \times 1500}{60} 
-        = 157 rad/s$
+        = \frac{2 \times \pi \times f_{s}}{60} 
+        = \frac{2 \times \pi \times 750,19}{60} 
+        = 78,54 rad/s$
+
+        $ P_{uit} = 78,54 \cdot 10 Nm = 785,4 W$
 
     \item [e.] \textbf{Wat is het maximale toerental van de motor waarmee een constante last van 20 Nm aangedreven kan worden?}
     

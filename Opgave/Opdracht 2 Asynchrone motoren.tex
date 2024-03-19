@@ -18,7 +18,8 @@ $(T_{aanloop} = 0,7 \times T_{nom})$ en dat het kipkoppel gelijk is aan $T_{kip}
         = \frac{n_{s} - n_{r}}{n_{s}} 
         = \frac{\frac{Hz*60}{P} - n_{r}}{\frac{Hz*60}{P}}
         = \frac{1500 - 1440}{1500}  
-        = 0,04 slip$
+        = 0,04
+        = 4 procent slip $
 
     \item [b.] \textbf{Bereken het nominale asvermogen.}
 
@@ -32,26 +33,25 @@ $(T_{aanloop} = 0,7 \times T_{nom})$ en dat het kipkoppel gelijk is aan $T_{kip}
         \begin{figure}[h]
             \centering
             \includegraphics[scale=0.11]{kopppel-toerenkarakteristiek.jpg}
-            \caption{koppel-toerenkarakteristiek}
+            % \caption{koppel-toerenkarakteristiek}
         \end{figure}
 
     \item [d.] \textbf{Met behulp van een frequentieregelaar wordt het toerental gehalveerd $(n = 720 rpm)$. Wat moet de spanning en frequentie van de frequentieregelaar zijn om dit toerental in te kunnen stellen? Licht je antwoord kort toe.} 
         
-        \[ frequentie 
-        = \frac{n \times P}{60} 
-        = \frac{720 \times 2}{60} 
-        = 24 Hz \]
+        \[ U_{s} = 4,44 \cdot f_{s} \cdot N_{s} \cdot \phi_{max} \]
         
-        Wat betreft de spanning, wordt deze meestal gehandhaafd op de nominale spanning van de motor, in dit geval \( 400 \, \text{V} \). De frequentieregelaar past de frequentie aan om het gewenste toerental te bereiken terwijl de spanning op het nominale niveau blijft om een goede werking van de motor te garanderen.
+        Aangezien de de het toerental gehalveerd word moet de spanning en de frequentie ook halveren waardoor je komt op een spanning van 200V en een frequentie van 25Hz.
     
 
     \item [e.] \textbf{Wat verandert er aan de motorkarakteristiek als de frequentie van de frequentieregelaar $100 Hz$ is en de spanning gelijk blijft?
     Schets de nieuwe motorkarakteristiek en licht je antwoord kort toe.}
 
+    Doordat je de frequentie 2 keer zo groot maakt krijg je een andere verhouding in je spanng/frequentie waardoor de koppel toeren karakteristiek zich anders gaat gedragen.
+
         \begin{figure}[h]
             \centering
-            \includegraphics[scale=0.13]{2e.jpg}
-            \caption{koppel-toerenkarakteristiek}
+            \includegraphics[scale=0.6]{2e.jpg}
+            % \caption{koppel-toerenkarakteristiek}
         \end{figure}
 
 \end{enumerate}
