@@ -68,44 +68,23 @@
     Hier komt een mooie abstract
 \end{abstract}
 
-% \begin{multicols}{2}
+\section{Inleiding}
+\input{inleiding.tex}
 
+\section{Analyze} 
+\input{Analyse.tex}
 
-\section{Last}
+\newpage
 
-\begin{align*}
-  \textbf{Moonrover}\\
-  &\text{Gewicht :} & 6 \, \text{kg} \\
-  &\text{formaat (lengte x breedte):} & 40x25 \, \text{cm}\\
-  \textbf{Wielen}\\
-  &\text{diameter wielen :} & 15 \, \text{cm}\\
-  &\text{wrijvingscoefficient :} & 0.9 \, \\
-  &\text{rolweerstandcoefficient :} & 0.1 \, \\
-  &\text{Massatraagheid (J) :} & \text{$2.1 \cdot 10^{-3}$} \, \text{$kg \cdot m^{2}$}\\
-  \textbf{Specificaties}\\
-  &\text{topsnelhied vlakke grond :} & 2.1 \, \text{$m.s^{-1}$}\\
-  &\text{versnelling vlakke grond :} & 0.7 \, \text{$m/s^{2}$}\\
-  &\text{vertraging vlakke grond :} & 0.5 \, \text{$m/s^{2}$}\\
-  &\text{max helling :} & 30 \, \text{degrees}
-\end{align*}
-\\
-\textbf{Situatie Klimmend}
+\section{Lasten}
+\input{lasten.tex}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.3]{last_helling.jpg}
-  \caption{Last onder 30 graden helling}
-\end{figure}
-Gravitatieconstante van de maan is $g = 1.62 m/s^{2}$ \cite{HemelWaarnemen}\\
-Massa per wiel is $M = 1.5 kg$ \\
-$F_{z} = M \cdot g = 1.5 \cdot 1.62 = 2,43N$\\
-$F_{normaal} = sin(60^\circ) \cdot F_{z} = 2.10$\\
-$F_{slope} = cos(60^\circ) \cdot F_{z} = 1.215$\\
-Kracht per wiel om stil te blijven staan is $T_{as} = F_{slope} \cdot r_{wiel} = 1,215 \cdot 0,075 = 0,09Nm$
+\newpage
 
-
-
-% \end{multicols}
+\section{Motor}
+% Motor kromme berekennen
+% motor kromme laten zien en uitleggen
+% rendement bereken
 
 \section*{Conclusie}
 Hier komt een mooie conclusie
