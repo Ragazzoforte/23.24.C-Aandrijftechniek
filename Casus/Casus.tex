@@ -1,6 +1,7 @@
 \documentclass{article}
 
 % Useful packages
+\usepackage[dutch]{babel} % Nederlands taalpakket
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 
@@ -77,7 +78,7 @@
 \section{Inleiding}
 \input{inleiding.tex}
 
-\section{Analyze} 
+\section{Analyse} 
 \input{Analyse.tex}
 
 \newpage
@@ -89,11 +90,6 @@
 
 \section{Motor}
 \input{motor.tex}
-% Motor kromme berekennen
-% motor kromme laten zien en uitleggen
-% rendement bereken
-% efficientie
-% warmte
 
 \newpage
 
@@ -108,10 +104,10 @@
 \addcontentsline{toc}{section}{Referenties}
 
 \newpage
-% Bijlage's    
-\begin{appendices}
+% Bijlage's 
+\appendix 
 
-  \section*{Datasheet RE25 118745}
+  \section{Datasheet RE25 118745}
     \label{app:datasheet motor}
     \begin{figure}[htbp]
       \centering % trim=left bottom right top
@@ -122,7 +118,7 @@
 
   \newpage
 
-  \section*{Datasheet GP 32 A 166158}
+  \section{Datasheet GP 32 A 166158}
     \label{app:datasheet transmissie}
     \begin{figure}[htbp]
       \centering % trim=left bottom right top
@@ -131,6 +127,5 @@
     \end{figure}
     \cite{Maxon}
 
-\end{appendices}
 
 \end{document}
