@@ -98,38 +98,38 @@
 \newpage
 
 \section*{Conclusie}
+\addcontentsline{toc}{section}{Conclusie} % Voeg hoofdstuk toe aan inhoudsopgave
 \input{conclusie.tex}
 
+\newpage
 %Bibliography
-% \bibliographystyle{IEEEtran}
-% \bibliography{bib}
-% \appendix
-
-% \bibliographystyle{IEEEtran}
-% \bibliography{bib}
+\bibliographystyle{IEEEtran}
+\bibliography{bib}
+\addcontentsline{toc}{section}{Referenties}
 
 \newpage
 % Bijlage's    
 \begin{appendices}
 
-\section{Datasheet RE25 118745}
-\label{app:datasheet motor}
-\begin{figure}[htbp]
-  \centering % trim=left bottom right top
-  \includegraphics[page=1, clip, trim=0cm 0cm 0cm 0cm, scale = 0.65]{datasheet_RE25118745.pdf}
-  \caption{datasheet RE25 118745}
-  \label{fig:datasheet RE25 118745}
-\end{figure}
+  \section*{Datasheet RE25 118745}
+    \label{app:datasheet motor}
+    \begin{figure}[htbp]
+      \centering % trim=left bottom right top
+      \includegraphics[page=1, clip, trim=0cm 0cm 0cm 0cm, scale = 0.65]{datasheet_RE25118745.pdf}
+      % \caption{datasheet RE25 118745}
+    \end{figure}
+    \cite{Maxon}
 
-\newpage
+  \newpage
 
-\section{Datasheet Planetary Gearhead GP 32 A 166158}
-\begin{figure}[htbp]
-  \centering % trim=left bottom right top
-  \includegraphics[page=1, clip, trim=0cm 0cm 0cm 0cm, scale = 0.65]{datasheet Planetary Gearhead GP 32 A 166158.pdf}
-  \caption{datasheet Planetary Gearhead GP 32 A 166158}
-  \label{fig:datasheet Planetary Gearhead GP 32 A 166158}
-\end{figure}
+  \section*{Datasheet GP 32 A 166158}
+    \label{app:datasheet transmissie}
+    \begin{figure}[htbp]
+      \centering % trim=left bottom right top
+      \includegraphics[page=1, clip, trim=0cm 0cm 0cm 0cm, scale = 0.65]{datasheet Planetary Gearhead GP 32 A 166158.pdf}
+      % \caption{datasheet Planetary Gearhead GP 32 A 166158}
+    \end{figure}
+    \cite{Maxon}
 
 \end{appendices}
 
