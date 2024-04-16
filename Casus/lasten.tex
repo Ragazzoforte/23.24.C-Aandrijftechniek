@@ -118,7 +118,7 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
     In figuur \ref{fig:peanut} is te zien hoe de maximale koppel zich weerhoud tegen de hellingshoek. Hierbij is duidelijk te zien dat de maximale koppel af neemt naarmate de hellingshoek groter wordt.
 
 \subsection{Versnelling}
-    Hier wordt het koppeloverschot berekent wat nodig is om de beoogde versnelling te behalen voor het wiel. 
+    Hier wordt het koppeloverschot berekent wat nodig is om de beoogde versnelling te behalen voor het wiel; 
 
     \begin{multicols}{2}
         \textbf{Formules:}
@@ -129,7 +129,7 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
                 Hoekversnelling &= \frac{a}{omtrek_{wiel}} = 1.49 [omwentelingen/s^2] \\
                 &= 9.36 [rad/s^2] \\
                 &\Downarrow \\
-                T_{acc wiel} &= 2.1 \cdot 10^{-3} \cdot 9.36 = 19.6 [mNm]\\
+                T_{acc_{wiel}} &= 2.1 \cdot 10^{-3} \cdot 9.36 = 19.6 [mNm]\\
             \end{split}
         \end{equation}
 
@@ -145,16 +145,16 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
         \end{equation*}
     \end{multicols}
 
-Nu berekenen we het voor het hele karretje.
+Het koppel wat nodig is om het karretje te laten accelereren;
 
     \begin{multicols}{2}
         \textbf{Formules:}
         \begin{equation}
             \begin{split}
                 F &= m \cdot a \\
-                T &= F \cdot r \\
+                T_{acc_{karretje}} &= F \cdot r \\
                 &\Downarrow \\
-                T &= 2.1 \cdot 10^{-3} \cdot 9.36 = 19.6 [mNm]
+                T_{acc_{karretje}} &= 1,5 \cdot 0,7 \cdot 0,075 = 78,75 [mNm]
             \end{split}
         \end{equation}
 
@@ -162,11 +162,32 @@ Nu berekenen we het voor het hele karretje.
         \begin{equation*}
             \begin{split}
                 a &= 0.7 [m/s^2] \\
-                r &= 0,075 [m] \\
-                m &= 1,5 [N] 
+                r &= 0.075 [m] \\
+                m &= 1.5 [N] 
             \end{split}
         \end{equation*}
     \end{multicols}
+
+Het koppel wat dan nodig is om het wiel en het karretje te laten accelereren is dan als volgt;
+
+\begin{multicols}{2}
+    \textbf{Formules:}
+    \begin{equation}
+        \begin{split}
+            T_{acc_{totaal}} &= T_{acc_{wiel}} + T_{acc_{karretje}}\\
+            &\Downarrow \\
+            T_{acc_{totaal}} &= 19.6 + 78.75 = 98.35 [mNm]
+        \end{split}
+    \end{equation}
+
+    \textbf{constante:}
+    \begin{equation*}
+        \begin{split}
+            T_{acc_{wiel}} &= 19.6 [mNm] \\
+            T_{acc_{karretje}} &= 78.75 [mNm] 
+        \end{split}
+    \end{equation*}
+\end{multicols}
 
 \subsection{Snelheid}
     Hier berkenen we de maximale rpm waarbij de maximale snelheid van van 2.1 m/s niet word overtroffen.
