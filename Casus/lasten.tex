@@ -48,7 +48,7 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
                 T_{last} &= f_{Z} \cdot sin(\alpha) \cdot r \\
                 F_{Z} &= m \cdot g\\
                 &\Downarrow \\
-                T_{last} &= 2.43 \cdot 0 \cdot 0.075 = 0 [mNm]
+                T_{last} &= 2.43 \cdot sin(20) \cdot 0.075 = 62 [mNm]
             \end{split}
         \end{equation}
 
@@ -58,7 +58,7 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
                 r &= 0,075 [m] \\
                 m &= 1,5 [N] \\
                 g &= 1,62 [m/s^2] \\
-                \alpha &= 0^\circ 
+                \alpha &= 20^\circ 
             \end{split}
         \end{equation*}
     \end{multicols}
@@ -66,11 +66,11 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.7]{rolkoppel_NEW.png}
-        \caption{rolweerstand vs hellingsweerstand onder verschillende hoeken}
+        \caption{rollast vs hellingslast onder verschillende hoeken}
         \label{fig:birds}
     \end{figure}
 
-    In figuur \ref{fig:birds} is te zien hoe de rolweerstand en de hellingsweerstand zich gedragen ten opzichte van verschillende hellingshoeken. In de grafiek is te zien dat vanaf een hoek van $5.72^\circ$ de moonrover altijd stil zal blijven staan. Dit komt doordat de moonrover tot dit punt nog niet voorbij zijn rollast komt. Het snijpunt van de rollast met de hellingslast wordt als volgt berekent:
+    In figuur \ref{fig:birds} is te zien hoe de rolweerstand en de hellingsweerstand zich gedragen ten opzichte van verschillende hellingshoeken. In de grafiek is te zien dat vanaf een hoek van $5.72^\circ$ de moonrover altijd stil zal blijven staan. Dit komt doordat de moonrover tot dit punt nog niet voorbij zijn rollast komt. Het snijpunt van de rollast met de hellingslast word als volgt berekend:
     \begin{equation}
         \begin{split}
             T_{rollast} &= T_{hellingslast} \\
@@ -115,10 +115,10 @@ In dit hoofdstuk worden de verschillende lasten van de moonrover berekend. In de
         \label{fig:peanut}
     \end{figure}
 
-    In figuur \ref{fig:peanut} is te zien hoe de maximale koppel zich weerhoud tegen de hellingshoek. Hierbij is duidelijk te zien dat de maximale koppel af neemt naarmate de hellingshoek groter wordt.
+    In figuur \ref{fig:peanut} is te zien hoe de maximale koppel zich weerhoud tegen de hellingshoek. Hierbij is duidelijk te zien dat de maximale koppel afneemt naarmate de hellingshoek groter wordt.
 
 \subsection{Versnelling}
-    Hier wordt het koppeloverschot berekent wat nodig is om de beoogde versnelling te behalen voor het wiel; 
+    Hier word het koppeloverschot berekend wat nodig is om de beoogde versnelling te behalen voor het wiel; 
 
     \begin{multicols}{2}
         \textbf{Formules:}
@@ -190,7 +190,7 @@ Het koppel wat dan nodig is om het wiel en het karretje te laten accelereren is 
 \end{multicols}
 
 \subsection{Snelheid}
-    Hier berkenen we de maximale rpm waarbij de maximale snelheid van van 2.1 m/s niet word overtroffen.
+    Hier berekenen we de maximale rpm waarbij de maximale snelheid van van 2.1 m/s niet word overtroffen.
 
     \begin{multicols}{2}
         \textbf{Formules:}
